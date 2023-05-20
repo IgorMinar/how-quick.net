@@ -17,11 +17,18 @@
   text-align: center;
 }
 
+.unit {
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .gauge {
     width: 400px;
   }
   .value {
     font-size: 7rem;
+  }
+  .unit {
+    font-size: 4rem;
   }
 }
