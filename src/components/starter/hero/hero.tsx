@@ -9,7 +9,7 @@ export default component$(() => {
         <br />
         is your <span class="highlight">net</span>?
       </h1>
-      <p>We measured the end-to-end speed of your network and here is what we see...</p>
+      <p>We used a full-stack application to measured the end-to-end latency of your Web experience...</p>
     </div>
   );
 });
