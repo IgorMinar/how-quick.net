@@ -1,17 +1,14 @@
 import { component$ } from "@builder.io/qwik";
-//import { useServerTimeLoader } from "~/routes/layout";
 import styles from "./footer.module.css";
 
 export default component$(() => {
-  //const serverTime = useServerTimeLoader();
-
   return (
     <footer class={styles.footer}>
       <section></section>
       <section>
         Made with <a href="https://qwik.builder.io/">Qwik</a>,{" "}
-        <a href="https://workers.cloudflare.com/">Cloudflare Workers</a>, and 🧡 by{" "}
-        <a href="https://igor.dev/">igor.dev</a>
+        <a href="https://workers.cloudflare.com/">Cloudflare Workers</a>, <a href="https://ilovejavascript.net/">C3</a>,
+        and 🧡 by <a href="https://igor.dev/">igor.dev</a>
       </section>
       <a class={styles.github} href="https://github.com/IgorMinar/how-quick.net">
         <svg
