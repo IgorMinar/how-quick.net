@@ -11,9 +11,18 @@ export default component$(() => {
 
   useVisibleTask$(
     () => {
-      navigationTimingResult.value = performance.getEntriesByType("navigation")[0];
+      const observer = new PerformanceObserver((list) => {
+        const navigationEntry = list.getEntries().at(-1);
+        if (navigationEntry?.duration) {
+          navigationTimingResult.value = navigationEntry;
+        } else {
+          console.log("incomplete navigation entry with duration=0");
+        }
+      });
+
+      observer.observe({ entryTypes: ["navigation"] });
     },
-    { strategy: "document-idle" }
+    { strategy: "document-ready" }
   );
 
   return (
