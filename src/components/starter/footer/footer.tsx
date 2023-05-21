@@ -8,7 +8,7 @@ export default component$(() => {
       <section>
         Made with <a href="https://qwik.builder.io/">Qwik</a>,{" "}
         <a href="https://workers.cloudflare.com/">Cloudflare Workers</a>, <a href="https://ilovejavascript.net/">C3</a>,
-        and 🧡 by <a href="https://igor.dev/">igor.dev</a>
+        and 🤍 by <a href="https://igor.dev/">igor.dev</a>
       </section>
       <a class={styles.github} href="https://github.com/IgorMinar/how-quick.net">
         <svg
