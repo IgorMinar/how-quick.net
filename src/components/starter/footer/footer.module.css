@@ -12,6 +12,7 @@
   padding: 0 20px;
   background-color: var(--qwik-dark-background);
   text-align: center;
+  line-height: 1.4;
 }
 
 .github {
