@@ -28,7 +28,7 @@ export default component$(({ perfEntry }: { perfEntry: PerformanceEntryObject | 
         ></circle>
       </svg>
       <div class={styles.value}>
-        {duration}
+        {duration || "…"}
         <span class={styles.unit}>ms</span>
       </div>
     </div>

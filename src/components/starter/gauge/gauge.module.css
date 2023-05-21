@@ -18,6 +18,7 @@
 }
 
 .unit {
+  display: block;
   font-size: 2rem;
 }
 
