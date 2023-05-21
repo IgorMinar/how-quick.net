@@ -21,7 +21,8 @@ export default component$(() => {
       <div class={styles["timer-wrapper"]}>
         <Gauge perfEntry={navigationTimingResult.value} />
         <span>
-          served from: {serverInfo.value.colo} {serverInfo.value.hot ? "🔥" : "❄️"}
+          served {serverInfo.value.hot ? "🔥" : "❄️"} from{" "}
+          <a href="https://www.cloudflare.com/network/">{serverInfo.value.colo}</a>
         </span>
       </div>
       <p class={styles["whats-this"]}>
