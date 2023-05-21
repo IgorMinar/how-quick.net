@@ -6,9 +6,16 @@ import Footer from "~/components/starter/footer/footer";
 
 import styles from "./styles.css?inline";
 
-export const useServerTimeLoader = routeLoader$(() => {
+export const useServerInfoLoader = routeLoader$((requestEvent) => {
+  //TODO: fix typing
+  const hot = (globalThis as any).ARE_YOU_HOT ?? false;
+  (globalThis as any).ARE_YOU_HOT = true;
+
   return {
     date: new Date().toISOString(),
+    //TODO: fix typing
+    colo: (requestEvent.request as any).cf?.colo,
+    hot,
   };
 });
 

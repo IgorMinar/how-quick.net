@@ -1,9 +1,18 @@
-.counter-wrapper {
-  margin-top: 50px;
+.timer-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.whats-this {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  padding: 0 20px 70px;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
