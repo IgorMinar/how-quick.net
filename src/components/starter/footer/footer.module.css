@@ -11,10 +11,12 @@
   align-items: center;
   padding: 0 20px;
   background-color: var(--qwik-dark-background);
+  text-align: center;
 }
 
 .github {
   margin-right: 30px;
+  padding-left: 10px;
 }
 
 .anchor {
